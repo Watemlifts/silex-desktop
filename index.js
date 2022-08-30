@@ -21,7 +21,7 @@ const silex = new SilexServer(config);
 
 // start Silex
 silex.start(function() {
-  console.log('server started');
+  
 })
 
 // /////////////////////////////
@@ -59,7 +59,7 @@ function createWindow() {
 
   // and load the index.html of the app.
   const url = 'http://localhost:' + (process.env.PORT || 6805) + '/';
-  console.log('Sarting app on ' + url);
+  
   win.loadURL(url);
 
   // Open the DevTools.
@@ -104,7 +104,7 @@ app.on('ready', () => {
     const pathname = Url.parse(request.url).pathname.replace('home/home', 'home');
     callback(pathname);
   }, (error) => {
-    if (error) { console.error('Failed to register protocol'); }
+    if (error) {  }
   });
 });
 
